@@ -1,0 +1,82 @@
+/*SECTION DIVIDER*/
+
+.section-fill {
+    background-color: #efc7c2;
+}
+
+.custom-shape-divider-bottom-1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1 .shape-fill {
+    fill: #fdf9f9;
+}
+
+
+/* DIVIDER 2*/
+
+.section-fill-2 {
+    background-color: #fdf9f9;
+}
+
+.custom-shape-divider-bottom-2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-2 .shape-fill {
+    fill: #f4d8d4;
+}
+
+
+/* DIVIDER 3*/
+
+.section-fill-3 {
+    background-color: #f4d8d4;
+}
+
+.custom-shape-divider-bottom-3 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-3 .shape-fill {
+    fill: #fdf9f9;
+}

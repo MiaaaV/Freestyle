@@ -1,0 +1,372 @@
+/* BASE SETUP1 - resetting browser defaults*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* BASE SETUP2 
+Setting font size to X pixels doesn't let users to increase or decrease the font size on their browsers
+Default font size = 16px -> 1rem = 10px -> 10px / 16px = 0.625px = 62.5%
+*/
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Patrick Hand", cursive;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+}
+
+
+/*********************************/
+
+
+/*HEADER*/
+
+
+/*********************************/
+
+.header {
+    background-color: #efc7c2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*we want the nav to be sticky so we give it a fixed height*/
+    height: 9.6rem;
+    padding: 7rem 4.8rem 4.8rem;
+    position: relative;
+}
+
+.logo {
+    height: 10rem;
+}
+
+
+/*********************************/
+
+
+/*REUSABLE HEADINGS*/
+
+.heading-primary,
+.heading-secondary {
+    font-weight: 800;
+    color: #694f5d;
+    letter-spacing: 5px;
+}
+
+.heading-primary {
+    font-family: "Indie Flower", cursive;
+    font-size: 6.2rem;
+    font-weight: 800;
+    line-height: 1.05;
+    color: #694f5d;
+    letter-spacing: 5px;
+    margin-bottom: 7rem;
+    text-align: left;
+}
+
+.heading-secondary {
+    font-family: "Indie Flower", cursive;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/*Variation of the original grid, hence " -- "*/
+
+.container {
+    /*REUSABLE COMPONENT*/
+    /*Standard width - 1200px / 1140px*/
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    /*"Centering" the container*/
+    margin: 0 auto;
+}
+
+.grid {
+    /*REUSABLE COMPONENT*/
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid--grid--2 {
+    display: grid;
+    column-gap: 7.6rem;
+    row-gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f4d8d4;
+    padding-bottom: 3.2rem;
+    padding-top: 4.8rem;
+}
+
+.grid--2-cols {
+    /*REUSABLE COMPONENT*/
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fffff9;
+    padding-bottom: 4.8rem;
+    padding-top: 4.8rem;
+}
+
+.grid--2-cols-1 {
+    /*REUSABLE COMPONENT*/
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f4d8d4;
+    padding-bottom: 4.8rem;
+    padding-top: 4.8rem;
+}
+
+.grid--3-cols {
+    /*REUSABLE COMPONENT*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+    /*REUSABLE COMPONENT*/
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    /*REUSABLE COMPONENT*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+
+/*BUTTONS
+The buttons go along with the overall theme of the website, keeping the fun and playful looks. The main button for ordering sticks out of the whole website making it very easy to notice and the colour call for the client to click on it.*/
+
+.gradient-btn:link,
+.gradient-btn:visited {
+    display: inline-block;
+    color: #694f5d;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding: 1.6rem 3.2rem;
+    background-size: 250% auto;
+    border-radius: 150px;
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.19), 5px 6px 3px rgba(0, 0, 0, 0.24);
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-image: linear-gradient( to right, #caefd7 0%, #f5bfd7 50%, #abc9e9 100%);
+}
+
+.gradient-btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-position: right center;
+    color: #ffffff;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    background-color: #efc7c2;
+    color: #ffe5d4;
+    text-decoration: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 150px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #efc7c2;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #ffffff;
+}
+
+.btn--pricing-1:link,
+.btn--pricing-1:visited {
+    display: inline-block;
+    background-color: #efc7c2;
+    color: #ffffff;
+    border: 2px solid #efc7c2;
+    text-decoration: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 150px;
+}
+
+.btn--pricing-1:hover,
+.btn--pricing-1:active {
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    color: #efc7c2;
+}
+
+.btn--pricing:link,
+.btn--pricing:visited {
+    display: inline-block;
+    background-color: #d6b1c2;
+    color: #ffffff;
+    border: 2px solid #d6b1c2;
+    text-decoration: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 150px;
+}
+
+.btn--pricing:hover,
+.btn--pricing:active {
+    background-color: #ffffff83;
+    border-color: #f4f4f4;
+    color: #d6b1c2;
+}
+
+.cta-btn {
+    display: inline-block;
+    align-self: end;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #efc7c2;
+    color: #ffffff;
+}
+
+.cta-btn:hover {
+    background-color: #694f5d;
+    color: white;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #694f5d;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 2px;
+}
+
+.link:hover,
+.link:active {
+    color: #2e2329;
+    border: 1px solid transparent;
+}
+
+
+/* helper class to create space between buttons */
+
+.margin-help {
+    margin-right: 2rem !important;
+}
+
+.margin-bottom {
+    margin-bottom: 4.8rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* TAGS */
+
+.tag--2 {
+    background-color: #ffec99;
+}
+
+.tag--3 {
+    background-color: #fcc419;
+}
+
+.tag--4 {
+    background-color: #91a7ff;
+}
+
+.tag--5 {
+    background-color: #8ce99a;
+}
+
+.tag--6 {
+    background-color: #faa2c1;
+}
+
+.tag--7 {
+    background-color: #ff8787;
+}
+
+
+/* LIST */
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #694f5d;
+}
+
+
+/*DEFAULT SELECTOR BORDER*/
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem rgb(255, 255, 255, 0.5);
+}

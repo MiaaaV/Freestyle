@@ -1,0 +1,645 @@
+/*COLOURS USED
+MAIN -  #efc7c2 #694f5d #ffffff #FFFFF0 #d6b1c2
+TINT - #78616d #f4d8d4 #fdf9f9 #fffff9
+SHADOW -
+GRADIENT - #caefd7 #f5bfd7 #abc9e9
+GRAY - #555 #585858 #888
+
+
+/*********************************/
+
+
+/*NAVIGATION*/
+
+
+/*********************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #78616d;
+    font-weight: 600;
+    font-size: 2.4rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: rgb(255, 255, 255);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    border-radius: 150px;
+    padding: 1.2rem 2.4rem;
+    color: #ffffff;
+    background-color: #78616d;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #694f5d;
+}
+
+
+/* MOBILE NAV */
+
+.btn-mobile-nav {
+    border: none;
+    background-color: #efc7c2;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+
+/*********************************/
+
+
+/*HERO SECTION*/
+
+
+/*The hero is supposed to look easily approachable, fun - yet professional. A playful text style creates a warm approach to the clients, making it easy to understand the company before they have even interacted with them.*/
+
+
+/*********************************/
+
+.section-hero {
+    padding: 2.4rem 0 3.6rem;
+    background-color: #efc7c2;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.hero-description {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.3;
+    margin-bottom: 5rem;
+    margin-top: 6rem;
+    color: #555;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+
+/*CUSTOMERS
+Customer profiles are added to show a part of the already gathered clientele. This shows proof to the potential client about our already happy customers*/
+
+.customer-profiles {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.customer-images {
+    display: flex;
+}
+
+.customer-images img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #efc7c2;
+}
+
+.customer-images img:last-child {
+    margin: 0;
+}
+
+.customer-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #555;
+    margin-top: 3rem;
+}
+
+.customer-text span {
+    color: #78616d;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+
+/*FEATURED IN SECTION*/
+
+.section-featured-in {
+    padding: 1.2rem 0 3.2rem;
+    background-color: #efc7c2;
+}
+
+.heading-featured-in {
+    padding: 2.6rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2.4rem 2.4rem;
+    color: #888;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 4rem;
+    filter: brightness(0);
+    opacity: 40%;
+    margin-top: 3.2rem;
+}
+
+
+/*********************************/
+
+
+/*HOW IT WORKS SECTION*/
+
+
+/*********************************/
+
+.section-how {
+    padding: 9.6rem;
+    background-color: #fdf9f9;
+}
+
+.step-number {
+    font-size: 9.8rem;
+    font-weight: 800;
+    color: #efc7c2;
+    margin-bottom: 1.2rem;
+}
+
+.step-description,
+.step-description-right {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.step-description span {
+    font-weight: 800;
+}
+
+.step-textbox-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-img-first {
+    width: 75%;
+    margin-left: auto;
+}
+
+
+/*PHOTOS SECTION*/
+
+.section-photography {
+    padding: 9.6rem 0;
+    background-color: #f4d8d4;
+}
+
+.photography {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff83;
+    transition: all 0.4s;
+}
+
+.photography:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+
+.photography-content {
+    padding-top: 3.2rem 4.8rem 4.8rem 4.8rem;
+    margin: 0 1.2rem 1.2rem 0;
+}
+
+.photography-tags {
+    margin: 1.2rem;
+    display: flex;
+    gap: 0.2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #b197fc;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.photography-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+    margin-left: 1.2rem;
+}
+
+.photo-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 1.2rem;
+}
+
+.photo-attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.photo-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #694f5d;
+}
+
+.photography-photo {
+    width: 100%;
+}
+
+.all-photos {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+/*TESTIMONIALS SECTION*/
+
+.section-testimonials {
+    background-color: #fdf9f9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.testimonials-container {
+    padding: 9.6rem;
+    background-color: #fdf9f9;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #888;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/*PRICING SECTION*/
+
+.section-pricing {
+    padding: 9.6rem;
+    background-color: #f4d8d4;
+}
+
+.pricing-plan {
+    border-radius: 10px;
+    width: 75%;
+    background-color: #f4d8d4;
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 4px solid #efc7c2;
+    padding: 4.4rem;
+}
+
+.pricing-plan--best {
+    background-color: #ffffff83;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--best::after {
+    content: "best value";
+    color: #333;
+    position: absolute;
+    top: 4%;
+    right: -8%;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #d6b1c2;
+    padding: 0.5rem 4rem;
+    transform: rotate(45deg);
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name {
+    color: #78616d;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-right: 0.8rem;
+}
+
+.plan-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #888;
+}
+
+.plan-details {
+    color: #555;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.plan-button {
+    text-align: center;
+    margin-top: 3.2rem;
+}
+
+.feature-icon {
+    color: #efc7c2;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #ffffff83;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: 555;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+/*****************************/
+
+
+/* CTA SECTION*/
+
+.section-cta {
+    padding: 9.6rem;
+    background-color: #fdf9f9;
+}
+
+.cta {
+    display: grid;
+    /* 2/3 = 66.6% + 1/3 = 33.3% */
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #efc7c2, #fdf9f9);
+    overflow: hidden;
+}
+
+.cta-text-box {
+    display: grid;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #333;
+    width: 100%;
+}
+
+.cta-heading {
+    font-family: "Indie Flower", cursive;
+    color: #694f5d;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 3.2rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient( to right, rgba(239, 199, 194, 0.4), rgba(253, 249, 249, 0.4)), url("../img/photography/cta-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form:last-child {
+    margin-bottom: 1.2rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-form input::placeholder {
+    color: #999;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem rgb(120, 97, 109, 0.3);
+}
+
+.footer {
+    padding: 12.8rem 0;
+    background-color: #f4d8d4;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.social-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #5d5d5d;
+    line-height: 1.6;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #5d5d5d;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #454545;
+}
